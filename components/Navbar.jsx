@@ -4,10 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import { FaBars, FaTimes } from "react-icons/fa";
-import Logo from "../images/logo.png";
+import Logo from "../images/Logo.png";
 function Navbar({ ...rest }) {
-  const [dropDown, setDropdown] = useState(false);
   const [isNav, setIsNav] = useState(false);
   const router = useRouter();
   return (
