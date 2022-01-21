@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block;
+  font-weight: $font-weight-light;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  @include for-tablet-portrait-up {
+    padding: 1rem 1.5rem;
+  }
+  transition: $transition;
+  border: none;
+  background: none;
+  text-decoration: none;
+  &.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: #fff;
+    &:hover {
+      color: #fff !important;
+      background: transparentize($primary-color, 0.2);
+    }
+  }
+  &.btn-outline {
+    background-color: transparent;
+    border: solid 1px $dark-color;
+    &:hover {
+      color: #fff !important;
+      background-color: $primary-color;
+      border: solid 1px $primary-color;
+    }
+  }
+  &.btn-custom {
+    background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+    border-radius: 10px;
+    color: #fff;
+    transition: $transition;
+    &:hover {
+      scale: 1.03;
+    }
+  }
+}
