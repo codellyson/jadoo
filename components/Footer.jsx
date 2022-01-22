@@ -4,7 +4,7 @@ import GooglePlay from "../images/GooglePlay.png";
 import AppleStore from "../images/AppStore.png";
 import Image from "next/image";
 import SnapTop from "./SnapTop";
-
+import Logo from "../images/STAHOS.png";
 function Footer() {
   return (
     <footer>
@@ -12,7 +12,10 @@ function Footer() {
         <div className="footer-main-content">
           {" "}
           <div className="content">
-            <h1>Jadoo.</h1>
+            <h1>
+              {" "}
+              <Image src={Logo} layout="responsive" alt="brand logo" />
+            </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
               vero hic quaerat ducimus impedit.
